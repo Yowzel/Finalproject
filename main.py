@@ -40,6 +40,12 @@ class LoginPage(webapp2.RequestHandler):
                      'log_message' : log_message}
         self.response.out.write(template.render(variables))
 
+class StartGamePage(webapp2.RequestHandler):
+    def get(self):
+        template2 = jinja_environment.get_template('story.html')
+        self.response.out.write(template2.render())
+
 app = webapp2.WSGIApplication([
     ('/', LoginPage),
+    ('/start', StartGamePage),
 ], debug=True)
