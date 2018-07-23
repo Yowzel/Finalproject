@@ -62,3 +62,22 @@ h1 {
   left: 0;
   right: 0;
 }
+
+.footer-main-div{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background #272727;
+  padding: 20px 0px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    font-family: "Times New Roman";
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
