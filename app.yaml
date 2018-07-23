@@ -6,6 +6,8 @@ service: jeopardy
 handlers:
 - url: /css
   static_dir: css
+- url: /js
+  static_dir: javaScript
 - url: /.*
   script: main.app
 

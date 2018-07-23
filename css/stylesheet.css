@@ -31,6 +31,10 @@ h1 {
   border-radius: 10px;
 }
 
+.trigger:hover .box{
+  transform: translate(90px, 70px) rotate(20deg)
+}
+
 .flex1 {
   display: grid;
   grid-template-columns: 30% 30% 30%;
@@ -45,4 +49,10 @@ h1 {
 #login {
   grid-column-start: 6;
   grid-column-end: 8;
+}
+
+.startButton{
+  text-align: center;
+  font-size: 18px;
+
 }
