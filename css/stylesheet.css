@@ -30,3 +30,19 @@ h1 {
   border: 10px solid #8799b7;
   border-radius: 10px;
 }
+
+.flex1 {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 20%;
+}
+
+#title {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+#login {
+  grid-column-start: 6;
+  grid-column-end: 8;
+}
