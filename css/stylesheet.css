@@ -46,20 +46,7 @@ h1 {
   grid-template-rows: 20%;
 }
 
-<<<<<<< HEAD
 
 .startButton{
   text-align: center;
   font-size: 18px;
-
-=======
-#title {
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-
-#login {
-  grid-column-start: 6;
-  grid-column-end: 8;
->>>>>>> 06ae65054a5b646b3830016369cef06ca1331d25
-}
