@@ -4,8 +4,8 @@ threadsafe: true
 service: jeopardy
 
 handlers:
-- url: /styles
-  static_dir: styles
+- url: /css
+  static_dir: css
 - url: /.*
   script: main.app
 
