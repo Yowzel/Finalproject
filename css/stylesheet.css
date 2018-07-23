@@ -54,6 +54,8 @@ h1 {
 }
 
 .under{
+  width: 100px;
+  height: 100px;
   position: absolute;
   margin-left: 50px;
   margin-right: 10px;
