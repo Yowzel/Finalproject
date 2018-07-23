@@ -1,19 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda');
+@import url('https://fonts.googleapis.com/css?family=Caesar+Dressing');
 
 body {
-    background-color: #394559;
     border-style: solid;
     border-width: 5px;
     margin: 0px;
+    background-image: url('http://genchi.info/image/greek-mythology-wallpaper-17.jpg'), url('https://images.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg?auto=compress&cs=tinysrgb&h=350');
+    background-size: cover;
+    background-blend-mode: lighten;
+    font-family: 'Caesar Dressing';
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
-  font-family: 'Merienda';
+  font-family: 'Caesar Dressing';
   color: white;
   text-align: center;
-
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: black;
 }
 
 .box{
@@ -33,6 +38,16 @@ h1 {
 
 .flex1 {
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: 30% 30% 30%;
   grid-template-rows: 20%;
+}
+
+#title {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+#login {
+  grid-column-start: 6;
+  grid-column-end: 8;
 }
