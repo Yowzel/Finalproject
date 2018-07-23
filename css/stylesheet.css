@@ -42,7 +42,7 @@ h1 {
 
 .flex1 {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 80% 20%;
   grid-template-rows: 20%;
 }
 
@@ -51,15 +51,3 @@ h1 {
 .startButton{
   text-align: center;
   font-size: 18px;
-
-=======
-#title {
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-
-#login {
-  grid-column-start: 6;
-  grid-column-end: 8;
->>>>>>> 06ae65054a5b646b3830016369cef06ca1331d25
-}
