@@ -1,10 +1,9 @@
-// window.onload = function (){
-//   let playSquare = document.querySelector(".trigger");
-//   playSquare.onclick = onStartClick;
-// }
+window.onload = function (){
+  $(".display div").hide();
+  $(".display div").first().show();
 
-
-// function onStartClick(){
-//   window.open("story.html")
-//   console.log("Please Work");
-// }
+  $(".page-1").click(function(){
+      $(".display div").hide();
+      $(".display .page-2").first().show();
+  });
+}
