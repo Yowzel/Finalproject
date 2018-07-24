@@ -1,15 +1,64 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda');
 @import url('https://fonts.googleapis.com/css?family=Caesar+Dressing');
-
-body {
-    background-color: #35322F;
-}
+@import url('https://fonts.googleapis.com/css?family=Eczar');
 
 h1 {
-  color: #FFFCF2;
-  font-size: 40px;
+  padding-top:20px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Caesar Dressing';
+  color: white;
+  text-align: center;
+  margin: 0;
 }
 
-p {
-  padding: 100px
+
+body {
+    margin: 0px;
+    background-size: cover;
+    font-family: 'Caesar Dressing';
+    background-color: black;
+    color: white;
+}
+
+h2 {
+  text-align: center;
+  overflow:hidden;
+  white-space:nowrap;
+  margin-top: 300px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Eczar';
+  color: white;
+}
+
+
+button {
+  width: 200px;
+  height: 100px;
+  display: grid;
+  margin: 0 auto;
+  margin-top: 150;
+  margin-bottom: 150;
+  border-radius: 15px;
+  color:#000;
+  background-color:white;
+}
+.button:hover {
+    animation: navmenu 600ms forwards;
+}
+@keyframes navmenu{
+  0%{
+    opacity:1;
+    top:1000px;
+  }
+  100%{
+    opacity:.5;
+    top:0px;
+  }
+}
+.flex1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50%;
 }
