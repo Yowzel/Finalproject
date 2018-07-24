@@ -8,10 +8,10 @@
     <script src="/js/start.js"> </script>
  </head>
  <body>
-<div class= "flex1">
+<div id="hello">
   <nav>
     <ul>
-      <li> <a href="/">Programming</a>
+      <li> <a href="/" class="textunder">menu</a>
         <ul>
           <li><a href="/start">Begin Story </a></li>
           <li><a href="/about">About Us </a></li>
@@ -20,7 +20,10 @@
       </li>
     </ul>
   </nav>
-   <div id= "title"> <h1> Imminent Reprisal </h1> </div>
+  <a href="#hello" class ="textunder"> Imminent Reprisal </a>
+  <a href="#login" class ="textunder"> Login </a>
+</div>
+<div class= "flex1">
    <div id= "login"> <p> Logged in user: {{user}}</p>
       <p><a href="{{log_url}}">{{log_message}}</a></p> </div>
  </div>
