@@ -21,8 +21,7 @@ h1 {
   -webkit-text-stroke-color: black;
 }
 
-<<<<<<< HEAD
-=======
+
 /* .box{
   position: relative;
   display: inline-block;
@@ -43,13 +42,11 @@ h1 {
   transform: translate(90px, 70px) rotate(20deg)
 } */
 
->>>>>>> 7891f41aba44047780025e8e959ce21b1cf70326
+
 .flex1 {
   display: grid;
   grid-template-columns: 25% 50% 25%;
 }
-
-
 
 
 .footer-main-div{
