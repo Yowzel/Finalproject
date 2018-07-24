@@ -61,4 +61,12 @@ button {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50%;
+
+p.quit a {
+  color: lightblue;
+}
+
+.quit {
+  text-align: right;
+
 }
