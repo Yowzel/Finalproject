@@ -45,7 +45,19 @@ class StartGamePage(webapp2.RequestHandler):
         template2 = jinja_environment.get_template('story.html')
         self.response.out.write(template2.render())
 
+class AboutPage(webapp2.RequestHandler):
+    def get(self):
+        template3 = jinja_environment.get_template('about.html')
+        self.response.out.write(template3.render())
+
+class Leaderboard(webapp2.RequestHandler):
+    def get(self):
+        template4 = jinja_environment.get_template('leaderboard.html')
+        self.response.out.write(template4.render())
+
 app = webapp2.WSGIApplication([
     ('/', LoginPage),
     ('/start', StartGamePage),
+    ('/about', AboutPage),
+    ('/leaderboard', Leaderboard),
 ], debug=True)
