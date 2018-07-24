@@ -10,6 +10,10 @@ h1 {
   font-size: 40px;
 }
 
-p {
-  padding: 100px
+p.quit a {
+  color: lightblue;
+}
+
+.quit {
+  text-align: right;
 }
