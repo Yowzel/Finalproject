@@ -21,7 +21,7 @@ h1 {
   -webkit-text-stroke-color: black;
 }
 
-.box{
+/* .box{
   position: relative;
   display: inline-block;
   background: #c5d1e5;
@@ -39,7 +39,7 @@ h1 {
 
 .trigger:hover .box{
   transform: translate(90px, 70px) rotate(20deg)
-}
+} */
 
 .flex1 {
   display: grid;
@@ -81,3 +81,55 @@ h1 {
     text-align: center;
     font-size: 15px;
 }
+
+/*
+.dropDown{
+  margin: 0 auto;
+  margin-top: 10px;
+  width:150px;
+}
+.dropDownButton {
+  padding: 10px;
+  background: ;
+}
+
+.dropDownButton a{
+  color: #333;
+  text-decoration: none;
+}
+.dropDown ul{
+  list-style-type: none;
+}
+
+.dropDown ul li{
+  padding: 10px 5px;
+  background: white;
+  display: none;
+  opacity: 0;
+}
+
+.dropDown:hover li{
+  animation: load 1s  forwards;
+  display: block;
+}
+@keyframes load{
+  0%{
+    transform: translateX(25px) rotate(-30deg)
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+.dropDown li:first-child{
+  animation-delay: 0;
+}
+
+.dropDown li:nth-child(2){
+  animation-delay: 0.20s;
+}
+
+.dropDown li:last-child{
+  animation-delay: 0.40s;
+} */
