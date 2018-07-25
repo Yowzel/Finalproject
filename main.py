@@ -13,6 +13,18 @@ jinja_environment = jinja2.Environment(
     loader = jinja2.FileSystemLoader(
         os.path.dirname(__file__) + '/templates'))
 
+#To check if a user is logged in
+def LoginStuff():
+    user = users.get_current_user()
+    if user:
+        #user is logged in
+        user_info_list =  user_info.query(user_info.userid == user.user_id()).fetch()
+
+log_url = users.create_logout_url('/')
+logout = {
+    'log_url': log_url,
+}
+#also a part of it to see if a user is logged in ^
 
 class LoginPage(webapp2.RequestHandler):
     def get(self):
@@ -22,13 +34,6 @@ class LoginPage(webapp2.RequestHandler):
             log_url = users.create_logout_url('/')
             log_message = 'Sign out'
             user_info_list =  user_info.query(user_info.userid == user.user_id()).fetch()
-            if len(user_info_list)<1:
-                test = user_info(user_nick= user.nickname(), user_email= user.email(), userid= user.user_id(), pagecount= 0)
-            else:
-                test = user_info_list[0]
-            test.pagecount +=1
-            test.put()
-            pagecount = test.pagecount
         else:
             #user not logged in
             log_url = users.create_login_url('/')
@@ -42,8 +47,19 @@ class LoginPage(webapp2.RequestHandler):
 
 class StartGamePage(webapp2.RequestHandler):
     def get(self):
-        template2 = jinja_environment.get_template('story.html')
-        self.response.out.write(template2.render())
+        user = users.get_current_user()
+        if user:
+            template2 = jinja_environment.get_template('story.html')
+            self.response.out.write(template2.render(logout))
+        else:
+            template = jinja_environment.get_template('home.html')
+            self.redirect('/')
+            self.response.out.write(template.render())
+        LoginStuff()
+
+
+
+
 
 class AboutPage(webapp2.RequestHandler):
     def get(self):
