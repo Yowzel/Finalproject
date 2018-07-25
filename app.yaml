@@ -5,6 +5,8 @@ threadsafe: true
 handlers:
 - url: /css
   static_dir: css
+- url: /sound
+  static_dir: sound
 - url: /js
   static_dir: javaScript
 - url: /.*
