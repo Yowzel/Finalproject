@@ -8,30 +8,68 @@
     <script src="/js/start.js"> </script>
  </head>
  <body>
-<div id="hello">
-  <nav>
-    <ul>
-      <li> <a href="/" class="textunder">menu</a>
+    <div id="hello">
+      <nav>
         <ul>
-          <li><a href="/start">Begin Story </a></li>
-          <li><a href="/about">About Us </a></li>
-          <li><a href="/leaderboard">Leaderboards </a></li>
+          <li> <a href="/" class="textunder">menu</a>
+            <ul>
+              <li><a href="/start">Begin Story </a></li>
+              <li><a href="/about">About Us </a></li>
+              <li><a href="/leaderboard">Leaderboards </a></li>
+            </ul>
+          </li>
         </ul>
-      </li>
-    </ul>
-  </nav>
-  <a href="#hello" class ="textunder"> Imminent Reprisal </a>
-  <a href="#login" class ="textunder"> Login </a>
-</div>
-<div class= "flex1">
-   <div id= "login"> <p> Logged in user: {{user}}</p>
-      <p><a href="{{log_url}}">{{log_message}}</a></p> </div>
- </div>
-
-    <div class="footer">
-         <p>Created By: JGM</p>
-         <p> Julissa | Gia-Huy | Miguel </p>
-
+      </nav>
+      <a class ="textunder" id="title"> Imminent Reprisal </a>
+      <a href={{log_url}} class ="textunder" id="signout"> {{log_message}} </a>
     </div>
+    <div>
+      <section class ="sec1"> </section>
+      <div class="centertext"> Imminent Reprisal </div>
+    </div>
+    <div class= "description">
+      <p id="destag"> DESCRIPTION </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+       aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+       voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.
+      </p>
+    </div>
+    <div class="description">
+      <p id="revtag"> Reviews </p>
+      <div class="see">
+        <p>
+          <span class="reviews"> Miguel Angel: </span>
+          <span> wow this app is amazing!</span>
+        </p>
+        <p>
+          <span class="reviews"> Julissa Tinajero: </span>
+          <span> The story line for this is awesome! </span>
+        </p>
+        <p>
+          <span class="reviews"> Gia-Huy Gonzalez: </span>
+          <span> This is so rad! </span>
+        </p>
+      </div>
+    </div>
+    <div class= "social">
+      <section id="instagram">  </section>
+      <section id="twitter">  </section>
+      <section id="facebook">  </section>
+      <section id="snapchat">  </section>
+    </div>
+    <div class="footer">
+       <p class= "bottom" id="created">Created By: JGM</p>
+       <p class ="bottom"> Julissa | Gia-Huy | Miguel </p>
+    </div>
+    <!-- <div class= "social">
+      <p id="instagram"></p>
+      <p id="twitter"></p>
+      <p id="facebook"></p>
+      <p id="snapchat"></p>
+    </div> -->
  </body>
 </html>
