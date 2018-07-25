@@ -32,4 +32,12 @@ window.onload = function (){
       $(".display .page-7").first().show();
     });
 
+  $("#page-7-1").click(function(){
+      $(".display div").hide();
+      $(".display .page-8").first().show();
+      });
+  $("#page-8-1").click(function(){
+      $(".display div").hide();
+      $(".display .page-9").first().show();
+          });
 }
