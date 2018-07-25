@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Caesar+Dressing');
 
 body {
-    border-style: solid;
-
     margin: 0px;
     font-family: 'Caesar Dressing';
     background-color: #f2f1c6;
@@ -30,7 +28,7 @@ section.sec1 {
   left: 50%;
   right: 25%;
   transform: translate(-50%, -50%);
-  font-size: 60;
+  font-size: 60px;
   color: white;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
@@ -93,7 +91,7 @@ nav {
   display: block;
   margin:0;
   text-align: center;
-  text-transform: uppercase;
+  font-family: 'Caesar Dressing';
 }
 
 nav a{
@@ -163,6 +161,7 @@ nav ul ul li{
     grid-template-columns: 25% 50% 25%;
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 500;
     height: 45px;
     width: 100%;
@@ -172,9 +171,9 @@ nav ul ul li{
 }
 
 .textunder {
+  font-family: 'Caesar Dressing';
   margin-top: 13px;
   color: black;
-  text-decoration: none;
   text-align: center;
 }
 
@@ -264,4 +263,20 @@ nav ul ul li{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#hello{
+    position: fixed;
+    top: 0;
+    z-index: 500;
+    height: 45px;
+    width: 100%;
+    background-color: #dbd9b1;
+    text-align: center;
+    text-decoration-line: none;
+}
+
+.textunder {
+  color: black;
+  text-decoration: none;
 }

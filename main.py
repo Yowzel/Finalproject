@@ -63,8 +63,21 @@ class StartGamePage(webapp2.RequestHandler):
 
 class AboutPage(webapp2.RequestHandler):
     def get(self):
-        template3 = jinja_environment.get_template('about.html')
-        self.response.out.write(template3.render())
+            user = users.get_current_user()
+            if user:
+                #user is logged in
+                log_url = users.create_logout_url('/')
+                log_message = 'Sign out'
+                user_info_list =  user_info.query(user_info.userid == user.user_id()).fetch()
+            else:
+                #user not logged in
+                log_url = users.create_login_url('/')
+                log_message = "Sign in"
+            variables = { 'user': user,
+                         'log_url' : log_url,
+                         'log_message' : log_message}
+            template3 = jinja_environment.get_template('about.html')
+            self.response.out.write(template3.render(variables))
 
 class Leaderboard(webapp2.RequestHandler):
     def get(self):
