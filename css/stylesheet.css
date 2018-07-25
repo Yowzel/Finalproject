@@ -3,7 +3,7 @@
 
 body {
     border-style: solid;
-    border-width: 5px;
+
     margin: 0px;
     font-family: 'Caesar Dressing';
     background-color: #dbd9b1;
@@ -25,27 +25,6 @@ h1 {
   -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: black;
 }
-
-
-/* .box{
-  position: relative;
-  display: inline-block;
-  background: #c5d1e5;
-  width: 120px;
-  height: 120px;
-  border-radius: 10px;
-}
-.trigger{
-  background: #8799b7 ;
-  width: 120px;
-  height: 120px;
-  border: 10px solid #8799b7;
-  border-radius: 10px;
-}
-
-.trigger:hover .box{
-  transform: translate(90px, 70px) rotate(20deg)
-} */
 
 
 .flex1 {
