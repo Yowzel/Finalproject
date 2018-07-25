@@ -2,12 +2,24 @@ window.onload = function (){
   $(".display div").hide();
   $(".display div").first().show();
 
-  $(".page-1").click(function(){
+  $("#page-1-1").click(function(){
       $(".display div").hide();
-      $(".display .page-2").first().show();}
+      $(".display .page-2").first().show();
+    });
 
-  $(".page-2").click(function(){
+  $("#page-2-1").click(function(){
       $(".display div").hide();
       $(".display .page-3").first().show();
   });
+
+  $("#page-3-1").click(function(){
+      $(".display div").hide();
+      $(".display .page-4").first().show();
+    });
+
+    $("#page-4-1").click(function(){
+        $(".display div").hide();
+        $(".display .page-5").first().show();
+      });
+
 }
