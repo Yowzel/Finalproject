@@ -3,6 +3,7 @@ window.onload = function (){
   $(".display div").first().show();
 
   $("#page-1-1").click(function(){
+  $(".button").click(function(){
       $(".display div").hide();
       $(".display .page-2").first().show();
     });
