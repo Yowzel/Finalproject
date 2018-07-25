@@ -17,9 +17,19 @@ window.onload = function (){
       $(".display .page-4").first().show();
     });
 
-    $("#page-4-1").click(function(){
-        $(".display div").hide();
-        $(".display .page-5").first().show();
-      });
+  $("#page-4-1").click(function(){
+      $(".display div").hide();
+      $(".display .page-5").first().show();
+    });
+
+  $("#page-5-1").click(function(){
+      $(".display div").hide();
+      $(".display .page-6").first().show();
+    });
+
+  $("#page-6-1").click(function(){
+      $(".display div").hide();
+      $(".display .page-7").first().show();
+    });
 
 }
