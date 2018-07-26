@@ -160,11 +160,11 @@ window.onload = function (){
       });
   $("#page-81-1").click(function(){
       $(".display div").hide();
-      $(".display .page-121").first().show();
+      $(".display .page-711").first().show();
       $.post({
         url: '/saved',
         data: {
-          progress: '121'
+          progress: '711'
         }
       })
       });
