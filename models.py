@@ -5,3 +5,4 @@ class story_user(ndb.Model):
     user_email =  ndb.StringProperty(required=True)
     userid =  ndb.StringProperty(required=True)
     adventurecount = ndb.IntegerProperty(required=False)
+    lives = ndb.IntegerProperty(required=False)

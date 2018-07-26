@@ -1,11 +1,9 @@
 
 function hello (number) {
   if (number<=0) {
-    console.log("does this even work")
     $(".display div").hide();
     $(".display .page-1").first().show();
   } else {
-    console.log("hello")
     $(".display div").hide();
     $(".display .page-" + number).first().show();
   }
