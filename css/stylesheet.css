@@ -61,6 +61,8 @@ h1 {
 }
 .julImg{
   margin-top: 4.5%;
+  margin-left: 100px;
+  box-shadow: 0 0 18px 2px black;
 
 }
 
@@ -70,7 +72,43 @@ h1 {
   font-size: 20px;
 }
 
+.mig{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-top: 4.5%;
+  padding: 10px;
+
 }
+.migImg{
+  margin-top: 0;
+  margin-left: 100px;
+  box-shadow: 0 0 18px 2px black;
+}
+
+.migPara{
+  padding-left: 10%;
+  padding-right: 5%;
+  font-size: 20px;
+}
+.yow{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-top: 4.5%;
+  padding: 10px;
+
+}
+.yowImg{
+  margin-top: 0;
+  margin-left: 100px;
+  box-shadow: 0 0 18px 2px black;
+}
+
+.yowPara{
+  padding-left: 10%;
+  padding-right: 5%;
+  font-size: 20px;
+}
+
 
 #signout {
   text-align: right;

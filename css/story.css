@@ -81,13 +81,16 @@ button{
   margin-top: 1%;
 }
 
-img{
-  width: 40px;
-  height: 40px;
+#img{
+  width: 200px;
+  height: 200px;
   position: fixed;
-  bottom: 10;
-  right: 30;
+  bottom: 45%;
+  right: 5%;
+  z-index: 500;
 }
+
+
 
 section{
   margin: auto;
