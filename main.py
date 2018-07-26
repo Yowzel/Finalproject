@@ -21,9 +21,9 @@ def LoginStuff():
         story_user_list =  story_user.query(story_user.userid == user.user_id()).fetch()
 
 log_url = users.create_logout_url('/')
-logout = {
-    'log_url': log_url,
-}
+# logout = {
+#     'log_url': log_url,
+# }
 #also a part of it to see if a user is logged in ^
 
 class LoginPage(webapp2.RequestHandler):
@@ -81,6 +81,13 @@ class StartGamePage(webapp2.RequestHandler):
     def get(self):
         user = users.get_current_user()
         if user:
+            user = users.get_current_user()
+            hello =  story_user.query(story_user.userid == user.user_id()).fetch()[0]
+            testing = hello.adventurecount
+            logout = {
+                'log_url': log_url,
+                'adventurestuff': testing,
+            }
             template2 = jinja_environment.get_template('story.html')
             self.response.out.write(template2.render(logout))
 
@@ -90,15 +97,15 @@ class StartGamePage(webapp2.RequestHandler):
             self.response.out.write(template.render())
         LoginStuff()
 
-    def post(self):
-        user = users.get_current_user()
-        hello =  story_user.query(story_user.userid == user.user_id()).fetch()[0]
-        if self.request.get('page2_1'):
-            hello.adventurecount = 1
-            hello.put()
-        elif self.request.get('page2_2'):
-            hello.adventurecount = 100
-            hello.put()
+    # def post(self):
+    #     user = users.get_current_user()
+    #     hello =  story_user.query(story_user.userid == user.user_id()).fetch()[0]
+    #     if self.request.get('page2_1'):
+    #         hello.adventurecount = 1
+    #         hello.put()
+    #     elif self.request.get('page2_2'):
+    #         hello.adventurecount = 100
+    #         hello.put()
 
 class AboutPage(webapp2.RequestHandler):
     def get(self):
