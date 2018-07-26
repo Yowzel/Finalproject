@@ -4,7 +4,7 @@
 body {
     margin: 0px;
     font-family: 'Caesar Dressing';
-    background-color: #f2f1c6;
+    background-color: #f2f2d2;
 }
 
 section.sec1 {
@@ -263,6 +263,22 @@ nav ul ul li{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#hello{
+    position: fixed;
+    top: 0;
+    z-index: 500;
+    height: 45px;
+    width: 100%;
+    background-color: #dbd9b1;
+    text-align: center;
+    text-decoration-line: none;
+}
+
+.textunder {
+  color: black;
+  text-decoration: none;
 }
 
 #hello{
