@@ -126,7 +126,8 @@ class Leaderboard(webapp2.RequestHandler):
 class SavedPage(webapp2.RequestHandler):
     def post(self):
         print("hello world")
-
+        user_data = self.request.get('progress')
+        print("UserData: " + user_data)
 
 app = webapp2.WSGIApplication([
     ('/', LoginPage),

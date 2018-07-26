@@ -11,7 +11,12 @@ window.onload = function (){
   $("#page-2-1").click(function(){
       $(".display div").hide();
       $(".display .page-3").first().show();
-      $.post('/saved')
+      $.post({
+        url: '/saved',
+        data: {
+          progress: '1'
+        }
+      })
   });
 
   $("#page-3-1").click(function(){
