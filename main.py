@@ -57,10 +57,6 @@ class StartGamePage(webapp2.RequestHandler):
             self.response.out.write(template.render())
         LoginStuff()
 
-
-
-
-
 class AboutPage(webapp2.RequestHandler):
     def get(self):
         template3 = jinja_environment.get_template('about.html')

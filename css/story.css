@@ -39,7 +39,7 @@ button {
   display: grid;
   margin: 0 auto;
   margin-top: 150;
-  margin-bottom: 150;
+  margin-bottom: 50;
   border-radius: 15px;
   color:#000;
   background-color:white;
@@ -83,3 +83,9 @@ img{
   bottom: 10;
   right: 30;
 }
+
+section{
+  margin: auto;
+  width: 80%;
+  border: 10px solid #acb5c1;
+  padding: 30px;

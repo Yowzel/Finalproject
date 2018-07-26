@@ -5,6 +5,7 @@ window.onload = function (){
   $("#page-1-1").click(function(){
       $(".display div").hide();
       $(".display .page-2").first().show();
+      // pagecount = 1;
     });
 
   $("#page-2-1").click(function(){
