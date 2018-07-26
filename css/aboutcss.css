@@ -12,15 +12,18 @@ body {
   margin-top: 2px;
 }
 
+
+
+/* ALREADY COMMENTED OUT BELOW
 #aboutus {
-  /* background-image: url('http://www.tematy.info/library/d/desktop-wallpaper-hd-greek-god/desktop-wallpaper-hd-greek-god-05.jpg');
+  background-image: url('http://www.tematy.info/library/d/desktop-wallpaper-hd-greek-god/desktop-wallpaper-hd-greek-god-05.jpg');
   background-size: cover;
   height: 500px;
   border: 0px;
-  /* position: relative;
+  position: relative;
   margin-left: 3%;
   margin-right: 3%;
-  margin-top: 26px; */ */
+  margin-top: 26px;
 }
 
 .flexabout {
@@ -60,7 +63,8 @@ body {
   margin-left: -20px;
   margin-top: 50px;
   transform: rotate(90deg);
-  height: 350px;
+  height: 280px;
+  width: 300px;
 }
 
 .reggieclass {
@@ -68,5 +72,13 @@ body {
   grid-template-columns: 30% 70%
 }
 
-#giahuytext {
+.giahuytext {
+    display: inline-inline-block;
+    width: 280px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+} */
+
+
 }

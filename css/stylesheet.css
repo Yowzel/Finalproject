@@ -52,6 +52,26 @@ h1 {
   grid-template-columns: 33.3% 33.3% 33.3;
 }
 
+.jul{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-top: 4.5%;
+  padding: 10px;
+
+}
+.julImg{
+  margin-top: 4.5%;
+
+}
+
+.julPara{
+  padding-left: 10%;
+  padding-right: 5%;
+  font-size: 20px;
+}
+
+}
+
 #signout {
   text-align: right;
   margin-right: 50px;
