@@ -8,6 +8,9 @@
     <script src="/js/start.js"> </script>
  </head>
  <body>
+   <div class = 'lives'>
+     <p> Lives: {{displaylives}} </p>
+   </div>
 <div class = 'quit'>
 <a href="{{log_url}}"> Quit</class></a>
 </div>
@@ -80,8 +83,7 @@
       <h2> They turn to surround you. </h2>
       <h2> Game Over.</h2>
       <h2> Please click "quit" on top right.</h2>
-      <button onclick="scrollWin()" class="button" id = 'page-8-2'> Quit </button>
-      <button onclick="scrollWin()" class="button" id = 'page-8-2'> Restart </button>
+      <form method="get" action="/start"><button class="button" id = 'page-8-2'> Restart </button> </form>
   </div>
   <div class = 'page-711'>
       <h1> Imminent Reprisal </h1>
@@ -130,7 +132,9 @@ function scrollWin() {
     window.scrollTo(0, 0);
 }
 hello({{adventurestuff}})
+
 </script>
+
 
 
  </body>

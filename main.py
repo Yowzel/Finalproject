@@ -35,7 +35,7 @@ class LoginPage(webapp2.RequestHandler):
             log_message = 'Sign out'
             story_user_list =  story_user.query(story_user.userid == user.user_id()).fetch()
             if len(story_user_list)<1:
-                test = story_user(user_nick= user.nickname(), user_email= user.email(), userid= user.user_id(), adventurecount = 0)
+                test = story_user(user_nick= user.nickname(), user_email= user.email(), userid= user.user_id(), adventurecount = 0, lives = 3)
             else:
                 test = story_user_list[0]
             test.put()
@@ -81,21 +81,32 @@ class StartGamePage(webapp2.RequestHandler):
     def get(self):
         user = users.get_current_user()
         if user:
-            user = users.get_current_user()
             hello =  story_user.query(story_user.userid == user.user_id()).fetch()[0]
             testing = hello.adventurecount
+            show =''
+            print("StartGamePage: %s" % hello)
+            if hello.lives == 3:
+                show = "|||"
+            elif hello.lives == 2:
+                show = "||"
+            elif hello.lives == 1:
+                show = "|"
+            else:
+                print("you have no lives")
+            # hello.put()
             logout = {
                 'log_url': log_url,
                 'adventurestuff': testing,
+                'displaylives' : show,
             }
             template2 = jinja_environment.get_template('story.html')
             self.response.out.write(template2.render(logout))
-
         else:
             template = jinja_environment.get_template('home.html')
             self.redirect('/')
             self.response.out.write(template.render())
-        LoginStuff()
+        # LoginStuff()
+
 
     # def post(self):
     #     user = users.get_current_user()
@@ -137,8 +148,14 @@ class SavedPage(webapp2.RequestHandler):
         user = users.get_current_user()
         hello =  story_user.query(story_user.userid == user.user_id()).fetch()[0]
         hello.adventurecount = int(user_data)
+        testing = hello.adventurecount
+        if testing == 71 or testing == 711:
+            hello.lives -= 1
+            hello.adventurecount = 0
+        else:
+            print("does this work")
         hello.put()
-        print("UserData: " + user_data)
+        print("SavedPage: " + str(hello))
 
 app = webapp2.WSGIApplication([
     ('/', LoginPage),

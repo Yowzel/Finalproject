@@ -81,6 +81,15 @@ button{
   margin-top: 1%;
 }
 
+.lives{
+  position: fixed;
+  text-align: left;
+  width: 98%;
+  margin-top: -17px;
+  color: #e3ebf7;
+  font-size: 22px;
+}
+
 img{
   width: 40px;
   height: 40px;
