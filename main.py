@@ -127,6 +127,10 @@ class SavedPage(webapp2.RequestHandler):
     def post(self):
         print("hello world")
         user_data = self.request.get('progress')
+        user = users.get_current_user()
+        hello =  story_user.query(story_user.userid == user.user_id()).fetch()[0]
+        hello.adventurecount = int(user_data)
+        hello.put()
         print("UserData: " + user_data)
 
 app = webapp2.WSGIApplication([
