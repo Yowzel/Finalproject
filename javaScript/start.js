@@ -44,4 +44,8 @@ window.onload = function (){
       $(".display div").hide();
       $(".display .page-9").first().show();
       });
+  $("#page-4-2").click(function(){
+      $(".display div").hide();
+      $(".display .page-11").first().show();
+      });
 }
