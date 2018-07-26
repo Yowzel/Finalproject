@@ -32,7 +32,10 @@ window.onload = function (){
       $(".display div").hide();
       $(".display .page-7").first().show();
     });
-
+    $("#page-6-2").click(function(){
+        $(".display div").hide();
+        $(".display .page-71").first().show();
+        });
   $("#page-7-1").click(function(){
       $(".display div").hide();
       $(".display .page-8").first().show();
@@ -40,5 +43,5 @@ window.onload = function (){
   $("#page-8-1").click(function(){
       $(".display div").hide();
       $(".display .page-9").first().show();
-          });
+      });
 }
