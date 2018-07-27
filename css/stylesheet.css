@@ -67,9 +67,10 @@ h1 {
 }
 
 .julPara{
-  padding-left: 10%;
-  padding-right: 5%;
+  padding-left: 13%;
+  padding-right: 13%;
   font-size: 20px;
+  padding-top: 20%;
 }
 
 .mig{
@@ -86,9 +87,10 @@ h1 {
 }
 
 .migPara{
-  padding-left: 10%;
-  padding-right: 5%;
+  padding-left: 13%;
+  padding-right: 13%;
   font-size: 20px;
+  padding-top: 20%;
 }
 .yow{
   display: grid;
@@ -104,9 +106,10 @@ h1 {
 }
 
 .yowPara{
-  padding-left: 10%;
-  padding-right: 5%;
+  padding-left: 13%;
+  padding-right: 13%;
   font-size: 20px;
+  padding-top: 20%;
 }
 
 
