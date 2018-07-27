@@ -6,9 +6,11 @@ class story_user(ndb.Model):
     userid =  ndb.StringProperty(required=True)
     adventurecount = ndb.IntegerProperty(required=False)
     lives = ndb.IntegerProperty(required=False)
+    tries = ndb.IntegerProperty(required=False)
     def __str__(self):
-        return "User: %s, lives: %s, progress: %s" % (
+        return "User: %s, lives: %s, progress: %s, tries: %s" % (
             self.user_nick,
             self.lives,
             self.adventurecount,
+            self.tries
         )
