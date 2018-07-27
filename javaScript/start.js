@@ -3,6 +3,9 @@ function hello (number) {
   if (number<=0) {
     $(".display div").hide();
     $(".display .page-1").first().show();
+  } else if (number == 9){
+    $(".display div").hide();
+    $(".display .page-1").first().show();
   } else {
     $(".display div").hide();
     $(".display .page-" + number).first().show();
